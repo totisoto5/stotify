@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Stotify</title>
+</head>
+<body>
+    <header>
+        <img class="head-logo"></img>
+        <form class="head-form">
+            <input type="text" name="textoIngresado" placeholder="Qué estas buscando?" required>
+            <button type="submit" class="searchButton"><i class="fa-solid fa-magnifying-glass searchButton"></i></button>
+        </form>
+        <button class="head-button">Iniciar sesión</button>
+    </header>
+    <div class="div-padre">
+        <div class="left-div">
+            <main class="main-container">
+                <template class="album-cards" id="template-card-albums">
+                    <figure class="main-section">
+                        <img class="album-img">
+                        <p class="album-title"></p>
+                        <input type="hidden" name="album-id">
+                    </figure>
+                </template>
+            </main>
+        </div>
+        <div class="right-div">
+            <main class="second-container">
+                <h2 class="album-name"></h2>
+                <template class="tracks-cards" id="template-card-tracks">
+                    <figure class="second-section">
+                        <img class="track-img">
+                        <p class="track-title"></p>
+                        <input type="hidden" name="track-id">
+                    </figure>
+                </template>
+            </main>
+        </div>
+    </div>
+    
+
+
+    
+
+    <div class="separador">
+
+    </div>
+    <section class="reproducer">
+
+    </section>
+    <footer></footer>
+    <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
